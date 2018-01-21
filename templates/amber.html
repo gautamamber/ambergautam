@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Amber Gautam</title>
+	<link rel="shortcut icon" type="image/jpg" href="images/amber.jpg" >
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+</head>
+<style>
+	body{
+  background:#ec6a38;
+  -webkit-animation:colour 10s linear infinite;
+	-moz-animation:colour 10s linear infinite;
+  
+}
+
+
+
+@media only screen and (max-width: 320px)
+        {
+            
+            .about{
+                font-size: 25px;
+          }
+          .modalDialog >div {
+            width: 250px;
+          }
+          .modals{
+            font-size: 15px;
+          }
+          
+      }
+        @media only screen and (min-width: 321px) and (max-width: 480px)
+        {
+            
+            .about{
+                font-size: 25px;
+
+                    }
+                     .modalDialog > div{
+            width: 250px;
+          }
+                    .modals{
+            font-size: 15px;
+          }
+
+                }
+        @media only screen and (min-width: 481px) and (max-width: 600px)
+        {
+           
+            .about{
+                font-size: 25px;
+           
+
+        }
+         .modalDialog >div{
+            width: 300px;
+          }
+                    .modals{
+            font-size: 15px;
+          }
+    }
+        @media only screen and (min-width: 601px) and (max-width: 768px)
+        {
+            
+            .about{
+                font-size: 35px;
+           
+        }
+         .modalDialog > div{
+            width: 300px;
+          }
+                    .modals{
+            font-size: 15px;
+          }
+    }
+        @media only screen and (min-width: 769px) and (max-width: 1024px)
+        {
+           
+            .logo{
+                font-size: 35px;
+            }
+             .modalDialog > div{
+            width: 400px;
+          }
+                    .modals{
+            font-size: 20px;
+          }
+        }
+           
+
+        @media only screen and (min-width: 1025px) and (max-width: 1200px)
+        {
+
+            .about
+            {
+                font-size: 40px;
+            }
+             .modalDialog > div{
+            width: 400px;
+          }
+                    .modals{
+            font-size: 20px;
+          }
+                    }
+        @media only screen and (min-width: 1201px)
+        {
+           
+            .about{
+                font-size: 40px;
+            }
+             .modalDialog > div{
+            width: 400px;
+          }
+                    .modals{
+            font-size: 20px;
+          }
+            
+
+        }
+
+
+
+
+
+
+.modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+.modalDialog:target {
+    opacity:1;
+    pointer-events: auto;
+}
+.modalDialog > div {
+    
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: #fff;
+    background: -moz-linear-gradient(#fff, #999);
+    background: -webkit-linear-gradient(#fff, #999);
+    background: -o-linear-gradient(#fff, #999);
+}
+.close {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+}
+.close:hover {
+    background: #00d9ff;
+}
+.social{font-size:30px; color:#000000;
+  margin-top: 18px;
+  padding-left: 6px;
+padding-right: 6px;}
+@-webkit-keyframes colour{
+	0%{
+		background:#48F3FF
+	}
+
+	40%{
+		background:#436CFF
+	}
+
+	80%{
+		background:#3892FF
+	}
+
+	100%{
+		background:#00FFB4
+	}
+
+}
+
+@-moz-keyframes colour{
+	0%{
+		background:#48F3FF
+	}
+
+	40%{
+		background:#436CFF
+	}
+
+	80%{
+		background:#3892FF
+	}
+
+	100%{
+		background:#00FFB4
+	}
+
+}
+.about_me{
+	margin-top: 60px;
+}
+.about{
+	margin-top: 45px;
+	font-family: monospace;
+	
+}
+h1{
+  font-family:arial;
+  margin-top:100px;
+  color:#fff;
+  font-size:50px;
+  text-align:center;
+  text-transform:uppercase;
+}
+.pic{
+	margin-top: 20px;
+}
+.modals{
+   
+	
+	font-family: fantasy;
+}
+.logo{
+	margin-top: 30px;
+}
+</style>
+<body>
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12 pic">
+			<center>
+				<img src="static/amber.jpg" class="img-circle logo" height="200" width="200">
+			</center>
+		</div>
+	</div>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12 about">
+			<center>
+				<b>
+					Hey!, I am Amber Gautam<br>I am a  Developer and Problem Solver at <a style="text-decoration: none;" href="http://techfaq.in/">TechFaq???</a>
+				</b>
+			</center>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12 modals">
+			<center>
+				<a href="#openModal" class="btn btn-primary about_me" role="button">Little bit about me</a>
+
+<div id="openModal" class="modalDialog">
+    <div>	<a href="#close" title="Close" class="close">X</a>
+
+        	<h2>About me</h2>
+
+        Passionate about programming, Always excited to learn new things. Enthusiastic guy. Always looking for new opportunities. Believe in sharing of knowledge and experiences. Wanderlust.<br>
+        Python | Android | Web Development
+    </div>
+</div>
+			</center>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-xs-12 logo">
+			 <center>
+<a href="https://www.facebook.com/amber.gautam.5"  data-toogle= "tooltip" data-placement = "bottom" title="Facebook" class="social_icons social"><i class="fa fa-facebook" ></i></a>
+        <a href="https://twitter.com/gautam_amber" data-toogle= "tooltip" data-placement = "bottom" title="Twitter" class="social_icons social social"><i class="fa fa-twitter" ></i></a>
+
+<a href="https://www.youtube.com/channel/UCLWMdq4m0DFUR9y5ufXnbSA" data-toogle= "tooltip" data-placement = "bottom" title="Youtube" class="social_icons social"><i class="fa fa-youtube-play"></i></a>
+
+<a href="https://www.instagram.com/gautam_amber0777/" data-toogle= "tooltip" data-placement = "bottom" title="Instagram" class="social_icons social"><i class="fa fa-instagram"></i></a>
+
+<a href="https://www.linkedin.com/in/amber-gautam-988782137/" data-toogle= "tooltip" data-placement = "bottom" title="Linkedin" class="social_icons social"><i class="fa fa-linkedin" ></i></a>
+
+<a href="https://github.com/gautamamber" data-toogle= "tooltip" data-placement = "bottom" title="Github" class="social_icons social"><i class="fa fa-github" ></i></a>
+</center>
+
+		</div>
+	</div>
+</div>
+
+
+<script>
+	
+</script>
+</body>
+</html>
