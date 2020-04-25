@@ -1,0 +1,238 @@
+<html>
+<head>
+  <title>Amber Gautam</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:600,900" rel="stylesheet">
+</head>
+
+<style>
+    * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Raleway;
+  background-color: #202125;
+}
+
+.heading {
+    text-align: center;
+    font-size: 2.0em;
+    letter-spacing: 1px;
+    padding: 40px;
+    color: white;
+}
+
+.gallery-image {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-image img {
+  height: 250px;
+  width: 350px;
+  transform: scale(1.0);
+  transition: transform 0.4s ease;
+}
+
+.img-box {
+  box-sizing: content-box;
+  margin: 10px;
+  height: 250px;
+  width: 350px;
+  overflow: hidden;
+  display: inline-block;
+  color: white;
+  position: relative;
+  background-color: white;
+}
+
+.caption {
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
+  opacity: 0.0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.transparent-box {
+  height: 250px;
+  width: 350px;
+  background-color:rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: background-color 0.3s ease;
+}
+
+.img-box:hover img { 
+  transform: scale(1.1);
+}
+
+.img-box:hover .transparent-box {
+  background-color:rgba(0, 0, 0, 0.5);
+}
+
+.img-box:hover .caption {
+  transform: translateY(-20px);
+  opacity: 1.0;
+}
+
+.img-box:hover {
+  cursor: pointer;
+}
+
+.caption > p:nth-child(2) {
+  font-size: 0.8em;
+}
+
+.opacity-low {
+  opacity: 0.5;
+}
+</style>
+
+<body>
+  <p class="heading">Some of my Clicks</p>
+  <div class="gallery-image">
+    <div class="img-box">
+      <img src="static/banaras.jpg" alt="banaras" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p class="opacity-low">Banaras</p>
+        </div>
+      </div> 
+    </div>
+    <div class="img-box">
+      <img src="static/church.jpg" alt="Church" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p class="opacity-low">St. John Church, Mcleodganj</p>
+        </div>
+      </div>
+    </div>
+    <div class="img-box">
+      <img src="static/dhanaulti.jpg" alt="dhanaulti" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p class="opacity-low">Dhanaulti</p>
+        </div>
+      </div>
+    </div>
+    <div class="img-box">
+      <img src="static/dharamshala_streets.jpg" alt="dharamshala_streets" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p class="opacity-low">Dharamshala</p>
+        </div>
+      </div> 
+    </div>
+    <div class="img-box">
+      <img src="static/monestry.jpg" alt="monestry" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p class="opacity-low">Namgyal Monastery</p>
+        </div>
+      </div> 
+    </div>
+    <div class="img-box">
+      <img src="static/plane_two.jpg" alt="plane_two" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p class="opacity-low">Chennai</p>
+        </div>
+      </div> 
+    </div>
+    <div class="img-box">
+      <img src="static/sanjauli.jpg" alt="sanjauli" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p class="opacity-low">Sanjauli</p>
+        </div>
+      </div>
+    </div>
+    <div class="img-box">
+      <img src="static/shimla.jpg" alt="shimla" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p class="opacity-low">Shimla</p>
+        </div>
+      </div>
+    </div>
+    <div class="img-box">
+      <img src="static/shimla_two.jpg" alt="shimla_two" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p class="opacity-low">Kufri</p>
+        </div>
+      </div> 
+    </div>
+    <div class="img-box">
+      <img src="static/stadium.jpg" alt="stadium" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p class="opacity-low">Dharamshala</p>
+        </div>
+      </div> 
+    </div>
+    <div class="img-box">
+      <img src="static/vrindavan.jpg" alt="vrindavan" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p class="opacity-low">Vrindavan</p>
+        </div>
+      </div> 
+    </div>
+    <div class="img-box">
+      <img src="static/buddha.jpeg" alt="buddha" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p class="opacity-low">Mcleodganj</p>
+        </div>
+      </div> 
+    </div>
+    <div class="img-box">
+      <img src="static/shimla_church.jpeg" alt="shimla_church" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p class="opacity-low">Shimla</p>
+        </div>
+      </div> 
+    </div>
+    <div class="img-box">
+      <img src="static/kapleshwar.jpeg" alt="kapleshwar" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p class="opacity-low">Kapleshwar Temple</p>
+        </div>
+      </div> 
+    </div>
+        <div class="img-box">
+      <img src="static/chandauli.jpeg" alt="chandauli" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p class="opacity-low">Chandauli</p>
+        </div>
+      </div> 
+    </div>
+    <div class="img-box">
+      <img src="static/ugrsen.jpeg" alt="ugrsen" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p class="opacity-low">Agrasen ki baoli, Delhi</p>
+        </div>
+      </div> 
+    </div>
+    <div class="img-box">
+      <img src="static/clouds.jpg" alt="clouds" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p class="opacity-low">Mumbai</p>
+        </div>
+      </div> 
+    </div>
+  </div>
+</body>
+</html>

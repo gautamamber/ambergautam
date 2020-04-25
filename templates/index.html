@@ -12,13 +12,11 @@
 </head>
 <style>
 	body{
-  background:#ec6a38;
+  background:#48F3FF;
   -webkit-animation:colour 10s linear infinite;
 	-moz-animation:colour 10s linear infinite;
   
 }
-
-
 
 @media only screen and (max-width: 320px)
         {
@@ -68,7 +66,7 @@
         {
             
             .about{
-                font-size: 35px;
+                font-size: 36px;
            
         }
          .modalDialog > div{
@@ -79,11 +77,12 @@
           }
     }
         @media only screen and (min-width: 769px) and (max-width: 1024px)
-        {
-           
-            .logo{
-                font-size: 35px;
+        {.about
+            {
+                font-size: 36px;
             }
+           
+            
              .modalDialog > div{
             width: 400px;
           }
@@ -98,7 +97,7 @@
 
             .about
             {
-                font-size: 40px;
+                font-size: 36px;
             }
              .modalDialog > div{
             width: 400px;
@@ -111,7 +110,7 @@
         {
            
             .about{
-                font-size: 40px;
+                font-size: 36px;
             }
              .modalDialog > div{
             width: 400px;
@@ -179,21 +178,22 @@
 .close:hover {
     background: #00d9ff;
 }
-.social{font-size:30px; color:#000000;
+.social{font-size:31px; color:#000000;
   margin-top: 18px;
   padding-left: 6px;
 padding-right: 6px;}
-@-webkit-keyframes colour{
+
+/*@-webkit-keyframes colour{
 	0%{
 		background:#48F3FF
 	}
 
 	40%{
-		background:#436CFF
+		background:#20B2AA
 	}
 
 	80%{
-		background:#3892FF
+		background:#98C0E0
 	}
 
 	100%{
@@ -208,18 +208,18 @@ padding-right: 6px;}
 	}
 
 	40%{
-		background:#436CFF
+		background:#20B2AA
 	}
 
 	80%{
-		background:#3892FF
+		background:#98C0E0
 	}
 
 	100%{
 		background:#00FFB4
 	}
 
-}
+}*/
 .about_me{
 	margin-top: 60px;
 }
@@ -253,7 +253,7 @@ h1{
 	<div class="row">
 		<div class="col-xs-12 pic">
 			<center>
-				<img src="static/amber.jpg" class="img-circle logo" height="200" width="200">
+				<img src="static/profile_pic.jpeg" class="img-circle logo" height="200" width="200">
 			</center>
 		</div>
 	</div>
@@ -263,7 +263,7 @@ h1{
 		<div class="col-xs-12 about">
 			<center>
 				<b>
-					Hey!, I am Amber Gautam<br>I am a  Developer and Problem Solver at <a style="text-decoration: none;" href="http://techfaq.in/">TechFaq???</a>
+					Hi, I am Amber Gautam.<br>I am a Software Developer at<br><a style="text-decoration: none;" href="https://nickelfox.com/">Nickelfox</a> and Amateur Traveler.
 				</b>
 			</center>
 		</div>
@@ -274,18 +274,35 @@ h1{
 	<div class="row">
 		<div class="col-xs-12 modals">
 			<center>
-				<a href="#openModal" class="btn btn-primary about_me" role="button">Little bit about me</a>
+				<a href="#about" class="btn btn-primary about_me" role="button">About me</a>
+				<a href="#skills" class="btn btn-primary about_me" role="button">Skills</a>
+				<a href="{{ url_for('gallery') }}" class="btn btn-primary about_me" role="button">Gallery</a>
+			</center>
 
-<div id="openModal" class="modalDialog">
+
+<div id="about" class="modalDialog">
     <div>	<a href="#close" title="Close" class="close">X</a>
 
         	<h2>About me</h2>
 
-        Passionate about programming, Always excited to learn new things. Enthusiastic guy. Always looking for new opportunities. Believe in sharing of knowledge and experiences. Wanderlust.<br>
-        Python | Android | Web Development
+       		Working as a Backend developer at Nickelfox Technologies in Noida. Always excited to learn new technologies and solving real world problems. Enthusiastic person. <br> <b>Apart from these what I love the most is Traveling.</b>
+
     </div>
 </div>
-			</center>
+
+<div id="skills" class="modalDialog">
+    <div>	<a href="#close" title="Close" class="close">X</a>
+
+        	<h2>Skills</h2>
+        	Programming Languages: Python, GO, C <br>
+        	Frameworks: Django, Flask, DRF (Django Rest Framework) <br>
+        	Cloud Platform: AWS, GCP<br>
+			Infrastructure: AWS CDK, Terraform<br>
+			Tools: Git, Docker, SAM (Serverless Application Model) <br> 
+
+    </div>
+</div>
+			
 		</div>
 	</div>
 </div>
