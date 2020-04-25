@@ -1,4 +1,4 @@
 # virtual environment
 source ./venv/bin/activate
 # gunicron
-python app.py
+python3 app.py
